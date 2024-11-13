@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const powerDiv = document.getElementById('power');
     const energyDiv = document.getElementById('energy');
 
-    // Initialize a WebSocket connection to the server
-    const socket = new WebSocket('ws://localhost:7000');
+    // Use 'wss' and include the full Vercel URL
+    const socket = new WebSocket('wss://elect-monitor-iaks9frfh-terdys-projects.vercel.app');
 
     // Event listener for when the WebSocket connection is opened
     socket.addEventListener('open', (event) => {
